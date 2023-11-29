@@ -22,7 +22,7 @@
 body {
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
-    background-color: var(--clr-mediumbrown);
+    background-color: var(--clr-cream);
 }
 
 .small__font {
@@ -42,7 +42,7 @@ body {
     max-width: 30rem;
     padding: 2rem;
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 12rem;
     color: var(--clr-verypaleorange);
     border-radius: 16px;
 }
@@ -61,7 +61,7 @@ body {
 
 .chart__container {
     color: var(--clr-darkbrown);
-    background: var(--clr-cream);
+    background: var(--clr-verypaleorange);
     max-width: 30rem;
     margin: 1.5rem auto 0;
     border-radius: 16px;
@@ -75,35 +75,25 @@ h1 {
     font-size: 2rem;
 }
 
+
 .chart__bars {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding-top: 4rem;
-}
-
-.chart__bars > div{
-    background-color: var(--clr-cyan);
-    width: 2.8rem;
-    border-radius: 6px;
-}
-
-.chart__bars div:nth-child(even) {
-    background-color: var(--clr-softred);
-}
-
-.chart__days {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    gap: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    font-size: 13px;
+    justify-content: space-between;
     margin: 0 2.5rem;
-    letter-spacing: 1px;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.bar {
+    background-color: var(--clr-softred);
+    width: 2.5rem;
+    border-radius: 7px;
+}
+
+#wed-bar {
+    background-color: var(--clr-cyan);
 }
 
 hr {
