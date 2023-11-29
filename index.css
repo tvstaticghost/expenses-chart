@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --clr-softred: hsl(10, 79%, 65%);
+    --clr-cyan: hsl(186, 34%, 60%);
+
+    --clr-darkbrown: hsl(25, 47%, 15%);
+    --clr-mediumbrown: hsl(28, 10%, 53%);
+    --clr-cream: hsl(27, 66%, 92%);
+    --clr-verypaleorange: hsl(33, 100%, 98%);
+
+    --font-normal: 400;
+    --font-bold: 700;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--clr-mediumbrown);
+}
+
+.small__font {
+    font-size: 12px;
+}
+
+.large__font {
+    font-size: 26px;
+    font-weight: var(--font-bold);
+}
+
+.balance__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-softred);
+    align-items: center;
+    max-width: 30rem;
+    padding: 2rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    color: var(--clr-verypaleorange);
+    border-radius: 16px;
+}
+
+.balance__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.balance__amount {
+    letter-spacing: 1px;
+    font-weight: var(--font-bold);
+    font-size: 22px;
+}
+
+.chart__container {
+    color: var(--clr-darkbrown);
+    background: var(--clr-cream);
+    max-width: 30rem;
+    margin: 1.5rem auto 0;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-weight: var(--font-bold);
+    font-size: 2rem;
+}
+
+.chart__bars {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 4rem;
+}
+
+.chart__bars > div{
+    background-color: var(--clr-cyan);
+    width: 2.8rem;
+    border-radius: 6px;
+}
+
+.chart__bars div:nth-child(even) {
+    background-color: var(--clr-softred);
+}
+
+.chart__days {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 13px;
+    margin: 0 2.5rem;
+    letter-spacing: 1px;
+}
+
+hr {
+    max-width: 26rem;
+    margin: 1rem auto;
+    margin-bottom: 1.5rem;
+}
+
+.chart__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+}
+
+.chart__thismonth {
+    margin-left: 2rem;
+}
+
+.percentage {
+    font-weight: var(--font-bold);
+    text-align: end;
+    align-self: flex-end;
+}
+ 
