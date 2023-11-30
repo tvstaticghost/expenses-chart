@@ -35,3 +35,53 @@ function updateBarSize() {
 }
 
 updateBarSize();
+
+let today = new Date();
+let dayOfWeek = today.getDay();
+let daysOfWeek = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+];
+
+let currentDay = daysOfWeek[dayOfWeek];
+
+if (currentDay === 'Sunday') {
+    document.getElementById('mon-bar').style.backgroundColor = 'var(--clr-cyan)';
+}
+else if (currentDay === 'Tuesday') {
+    document.getElementById('tue-bar').style.backgroundColor = 'var(--clr-cyan)';
+}
+else if (currentDay === 'Wednesday') {
+    document.getElementById('wed-bar').style.backgroundColor = 'var(--clr-cyan)';
+}
+else if (currentDay === 'Thursday') {
+    document.getElementById('thu-bar').style.backgroundColor = 'var(--clr-cyan)';
+}
+else if (currentDay === 'Friday') {
+    document.getElementById('fri-bar').style.backgroundColor = 'var(--clr-cyan)';
+}
+else if (currentDay === 'Saturday') {
+    document.getElementById('sat-bar').style.backgroundColor = 'var(--clr-cyan)';
+}
+else if (currentDay === 'Sunday') {
+    document.getElementById('sun-bar').style.backgroundColor = 'var(--clr-cyan)';
+}
+
+let parentDiv = document.getElementById('bar-parent');
+let lastItem = parentDiv.lastElementChild;
+let childDivs = parentDiv.querySelectorAll('div');
+let newDiv = document.createElement('div');
+
+childDivs.forEach(function(childDiv) {
+    childDiv.addEventListener('mouseover', () => {
+        childDiv.style.opacity = '0.5';
+    })
+    childDiv.addEventListener('mouseout', () => {
+        childDiv.style.opacity = '1';
+    })
+})
